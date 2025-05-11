@@ -4,14 +4,17 @@
   "description": " Building a sample chatbot that connects with LLM models",
   "main": "index.js",
   "scripts": {
-    "start:dev": "nodemon --watch \"*.ts\" --exec \"ts-node\" ./src/index.ts",
+    "start:dev": "nodemon --watch \"*.ts\" --exec \"ts-node\" ./src/index.ts ",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix"
-
   },
   "repository": "https://github.com/wilpat/lanchain-chatbot",
   "author": "William Okafor",
   "license": "MIT",
   "dependencies": {
+    "@langchain/core": "^0.3.55",
+    "@langchain/openai": "^0.5.10",
+    "dotenv": "^16.5.0",
+    "langchain": "^0.3.24",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   },
@@ -24,5 +27,8 @@
     "eslint-plugin-prettier": "^5.2.2",
     "nodemon": "^3.1.10",
     "typescript-eslint": "^8.20.0"
+  },
+  "resolutions": {
+    "ajv": "8.17.1"
   }
 }
