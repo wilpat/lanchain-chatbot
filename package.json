@@ -3,7 +3,18 @@
   "version": "1.0.0",
   "description": " Building a sample chatbot that connects with LLM models",
   "main": "index.js",
+  "scripts": {
+    "start:dev": "nodemon --watch \"*.ts\" --exec \"ts-node\" ./src/index.ts"
+  },
   "repository": "https://github.com/wilpat/lanchain-chatbot",
   "author": "William Okafor",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.17",
+    "nodemon": "^3.1.10"
+  }
 }
