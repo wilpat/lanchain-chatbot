@@ -1,0 +1,9 @@
+{
+  "name": "chatbot",
+  "version": "1.0.0",
+  "description": " Building a sample chatbot that connects with LLM models",
+  "main": "index.js",
+  "repository": "https://github.com/wilpat/lanchain-chatbot",
+  "author": "William Okafor",
+  "license": "MIT"
+}
